@@ -1,0 +1,47 @@
+/*
+Theme Name: Minimal Starter
+Description: Thème WordPress classique minimal, base pour exercices et prototypes.
+Version: 1.0.0
+Author: Belutte
+Text Domain: minimal-starter
+Requires at least: 6.0
+Requires PHP: 7.4
+*/
+
+:root {
+  --text: #1a1a1a;
+  --bg: #ffffff;
+  --muted: #6b6b6b;
+  --line: #e5e5e5;
+  --max: 42rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: inherit; }
+img { max-width: 100%; height: auto; }
+
+.container { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+
+.site-header { border-bottom: 1px solid var(--line); padding: 1.25rem 0; }
+.site-header .container { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.site-title { font-weight: 700; text-decoration: none; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
+.site-nav a { text-decoration: none; color: var(--muted); }
+.site-nav a:hover { color: var(--text); }
+
+.site-main { padding: 2.5rem 0; }
+.entry { margin-bottom: 3rem; }
+.entry-title { margin: 0 0 .25rem; line-height: 1.2; }
+.entry-title a { text-decoration: none; }
+.entry-meta { color: var(--muted); font-size: .875rem; margin-bottom: 1rem; }
+
+.site-footer { border-top: 1px solid var(--line); padding: 1.5rem 0; color: var(--muted); font-size: .875rem; }
